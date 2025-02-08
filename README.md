@@ -8,3 +8,6 @@ I also need to write an alternative to autoconf.
 ## Status
 
 C library: OpenMPI v4.1.7 ``mpi.h.in`` up to commit 50c05da
+
+## Thanks
+https://github.com/1100110/OpenMPI/
