@@ -18,6 +18,10 @@
  * $HEADER$
  */
 
+module deimos.ompi.constants;
+nothrow extern (C)
+{
+
 /* error codes - don't forget to update opal/rutime/opal_init.c when
    adding to this list */
 immutable OPAL_ERR_BASE = 0; /* internal use only */
@@ -101,4 +105,5 @@ enum {
     OPAL_ERR_MODEL_DECLARED = (OPAL_ERR_BASE - 69),
     OPAL_PMIX_LAUNCH_DIRECTIVE = (OPAL_ERR_BASE - 70),
     OPAL_OPERATION_SUCCEEDED = (OPAL_ERR_BASE - 71)
+}
 }
