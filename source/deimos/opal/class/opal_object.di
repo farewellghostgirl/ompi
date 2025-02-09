@@ -115,3 +115,17 @@
  *   OBJ_DESTRUCT(&sally);
  * @endcode
  */
+
+module deimos.ompi.opal_object;
+
+nothrow extern (C)
+{
+
+     immutable OPAL_OBJ_MAGIC_ID = ulong ((0xdeafbeed) + 0xdeafbeed); // left shift by 32 in original source.?
+
+    /* typedefs ***********************************************************/
+    struct opal_object_t;
+    struct opal_class_t;
+    alias opal_construct_t = void(opal_object_t *);
+
+}
