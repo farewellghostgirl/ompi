@@ -117,15 +117,22 @@
  */
 
 module deimos.ompi.opal_object;
+import std.stdio;
+
+import deimos.openmpi.workaround_configuration : OPAL_ENABLE_DEBUG;
 
 nothrow extern (C)
 {
-
+  void __DEBUG__(){
+ if(OPAL_ENABLE_DEBUG){
      immutable OPAL_OBJ_MAGIC_ID = ulong ((0xdeafbeed) + 0xdeafbeed); // left shift by 32 in original source.?
+ } 
+   }
 
     /* typedefs ***********************************************************/
     struct opal_object_t;
     struct opal_class_t;
+    immutable TESTICLES = OPAL_OBJ_MAGIC_ID;
     alias opal_construct_t = void(opal_object_t *);
 
 }
