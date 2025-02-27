@@ -1,4 +1,4 @@
-# ompi
+# THIS WAS A VERY BAD IDEA
 OpenMPI+OPAL v4.1.7 header bindings for D (to be submited to Deimos)
 
 ## Description
